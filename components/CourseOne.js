@@ -1,225 +1,293 @@
-import React from 'react';
+import React, { useState,useRef, Component } from 'react'
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import Link from 'next/link';
 
-const CourseOne = ({textHeader,ismanequin}) => {
-    const products = [
+export default class App extends Component {
+
+
+constructor() {
+    super();
+    this.state={
+        products :[
+            {
+            name :"lentille bleu",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            lenseImageUrl:"/assets/images/lenses/blue.png",
+            imageTochange:"/assets/images/lenses/eye-blue.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        },
+       
         {
-        name :"lentille bleu",
-        rate:"4.8",
-        nbrStars:5,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-        lenseImageUrl:"/assets/images/lenses/blue.png",
-        imageTochange:"/assets/images/lenses/eye-blue.jpg",
-        nbrOfReviews:250,
-    },
-   
-    {
-        name :"lentille maron",
-        rate:"4.8",
-        nbrStars:2,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-        lenseImageUrl:"/assets/images/lenses/blue.png",
-        imageTochange:"/assets/images/lenses/eye-blue.jpg",
-        nbrOfReviews:250,
-    },
-    {
-        name :"lentille Vert",
-        rate:"3.5",
-        nbrStars:4,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg",
-        lenseImageUrl:"/assets/images/lenses/blue.png",
-        imageTochange:"/assets/images/lenses/eye-blue.jpg",
-        nbrOfReviews:250,
-    },
-    ];
+            name :"lentille maron",
+            rate:"4.8",
+            nbrStars:2,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            lenseImageUrl:"/assets/images/lenses/blue.png",
+            imageTochange:"/assets/images/gallery/img11.jpg",
+            nbrOfReviews:250,
+            isPreview : false
 
-
-    const manequinProducts = [
+        },
         {
-        name :"MAJESTIC GREY",
-        rate:"4.8",
-        nbrStars:5,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-        secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
-        nbrOfReviews:250,
-    },
-   
-    {
-        name :"MAJESTIC GREY",
-        rate:"4.8",
-        nbrStars:5,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-        secondImageUrl:"/assets/images/lenses/blue.png",
-        nbrOfReviews:250,
-    },
-    {
-        name :"MAJESTIC GREY",
-        rate:"4.8",
-        nbrStars:5,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-        secondImageUrl:"/assets/images/lenses/blue.png",
-        nbrOfReviews:250,
-    },
-    {
-        name :"MAJESTIC GREY",
-        rate:"4.8",
-        nbrStars:5,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-        secondImageUrl:"/assets/images/lenses/blue.png",
-        nbrOfReviews:250,
-    },
-    {
-        name :"MAJESTIC GREY",
-        rate:"4.8",
-        nbrStars:5,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-        secondImageUrl:"/assets/images/lenses/blue.png",
-        nbrOfReviews:250,
-    },
-    {
-        name :"MAJESTIC GREY",
-        rate:"4.8",
-        nbrStars:5,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-        secondImageUrl:"/assets/images/lenses/blue.png",
-        nbrOfReviews:250,
-    },
-    {
-        name :"MAJESTIC GREY",
-        rate:"4.8",
-        nbrStars:5,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-        secondImageUrl:"/assets/images/lenses/blue.png",
-        nbrOfReviews:250,
-    },
-    {
-        name :"MAJESTIC GREY",
-        rate:"4.8",
-        nbrStars:5,
-        firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-        secondImageUrl:"/assets/images/lenses/blue.png",
-        nbrOfReviews:250,
-    },
-    ]
+            name :"lentille Vert",
+            rate:"3.5",
+            nbrStars:4,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg",
+            lenseImageUrl:"/assets/images/lenses/blue.png",
+            imageTochange:"/assets/images/gallery/img13.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        },  {
+            name :"lentille bleu",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            lenseImageUrl:"/assets/images/lenses/blue.png",
+            imageTochange:"/assets/images/gallery/img9.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        },  {
+            name :"lentille bleu",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            lenseImageUrl:"/assets/images/lenses/blue.png",
+            imageTochange:"/assets/images/gallery/img9.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        },  {
+            name :"lentille bleu",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            lenseImageUrl:"/assets/images/lenses/blue.png",
+            imageTochange:"/assets/images/lenses/eye-blue.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        },
+        ],
+        manequinProducts :[
+            {
+            name :"MAJESTIC GREY",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        },
+       
+        {
+            name :"MAJESTIC GREY",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange4.jpg" ,
+            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        },
+        {
+            name :"MAJESTIC GREY",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange6.jpg" ,
+            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        }
+        ,
+        {
+            name :"MAJESTIC GREY",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        },
+        {
+            name :"MAJESTIC GREY",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            nbrOfReviews:250,
+                    isPreview : false
+
+        },
+        {
+            name :"MAJESTIC GREY",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            nbrOfReviews:250,
+                    isPreview : false
+
+        },
+        {
+            name :"MAJESTIC GREY",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            nbrOfReviews:250,
+                    isPreview : false
+
+        },
+        {
+            name :"MAJESTIC GREY",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            nbrOfReviews:250,
+                    isPreview : false
+
+        },
+        ],
+    };
+  } 
+
+  componentDidMount(){
+  }
 
 
-
-    const clickDoManequin = (e)=>{
+  hoverDoManequin = (e)=>{
+      console.log(this.state);
+        const   products = [...this.state.manequinProducts];
         let a = e.target.getAttribute('number');
-        console.log(a)
-        const lenseImage = document.querySelectorAll('.lenseImage')[a];
-        console.log(lenseImage)
-        setTimeout(()=>{
-            lenseImage.setAttribute("src",manequinProducts[a].secondImageUrl)
-            console.log(lenseImage)
-        },2000)
+        // let product = {...products[a]};
+        // product.isPreview =true;
+        // products[a] = product;
+        // this.setState({manequinProducts: products}) 
+
+        const lensImage = document.querySelectorAll(".lensImage")[a];
+        const eyeAfterLense = document.querySelectorAll('.eyeAfterLense')[a];
+        e.target.classList.add("imageMoved2");
+     setTimeout(()=>{
+        eyeAfterLense.setAttribute("src",products[a].secondImageUrl)
+
+     },500)
+        setTimeout(()=>{eyeAfterLense.classList.add("kenburns-top");  
+                },800)
+                  function  callback(e) {
+                    let a = e.target.getAttribute('number');
+                 
+                       setTimeout(()=>{
+                        eyeAfterLense.setAttribute("src",products[a].firstImageUrl);
+                        lensImage.classList.remove("imageMoved2");
+                        eyeAfterLense.classList.remove("kenburns-top");
+                       },1000)  }
+                    this.setState({manequinProducts: products})
+                    lensImage.addEventListener("webkitAnimationEnd",callback, false);  
+                    this.setState({manequinProducts: products}) 
+                    console.log(this.state) 
       
     }
 
-    const hoverDo = (e)=>{
-     
-        const lensImage = document.querySelectorAll('.lensImage');
-        const eyeAfterLense = document.querySelectorAll('.eyeAfterLense');
-        for(let i=0;i<lensImage.length;i++){
-                    let a = e.target.getAttribute('number');
-                    eyeAfterLense[i].setAttribute("src",products[a].firstImageUrl)
+     hoverDo = (e)=>{
+       const   products = this.state.products;
+     let a = e.target.getAttribute('number');
+     const lensImage = document.querySelectorAll(".lensImage")[a];
+        const eyeAfterLense = document.querySelectorAll('.eyeAfterLense')[a];
+                eyeAfterLense.setAttribute("src",this.state.products[a].firstImageUrl)
                     e.target.classList.add("imageMoved");
                 
-                  function callback() {
-                    lensImage[i].classList.remove("imageMoved");
-                    eyeAfterLense[i].setAttribute("src",products[a].imageTochange)
+                  function callback(e) {
+                    let a = e.target.getAttribute('number');
+                    lensImage.classList.remove("imageMoved");
+                    eyeAfterLense.setAttribute("src",products[a].imageTochange)
                   }
                 
-                  lensImage[i].addEventListener("webkitAnimationEnd", callback, false);  
-            
-         
-        }
-        
+                  lensImage.addEventListener("webkitAnimationEnd", callback, false);  
     }
-
-    const params = {
-        slidesPerView : 3,
-        loop: true,
-        speed: 30000,
-        spaceBetween : 30,
-        autoplay: {
-            delay: 9000,
-            disableOnInteraction: false
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
-
-        // Responsive breakpoints
-        breakpoints: {
-            1024:{
-                slidesPerView : 3
-            },
-            768:{
-                slidesPerView : 2
-            },
-            640:{
-                slidesPerView : 2
-
-            },
-            320:{
-                slidesPerView : 1
-            }
-        }
-    }
+  
+    
+    render() { 
     return (
         <div>
            <section className="course-one__top-title home-one">
             <div className="container">
                 <div className="block-title mb-0">
-                    <h2 className="block-title__title">{textHeader}</h2>
+                    <h2 className="block-title__title">{this.props.textHeader}</h2>
                 </div>
             </div>
             <div className="course-one__top-title__curve"></div>
         </section>
         {
-            ismanequin==="false" ? (
+            this.props.ismanequin==="false" ? (
 
                 <section className="course-one course-one__teacher-details home-one">
                     <div className="container">
                         <div className="course-one__carousel">
 
-                            <Swiper {...params} >
-                                {
-                                    products.map((prod,index)=>{
-                                            return(
+                            
+                            <div className="swiper-container swiper-container-initialized swiper-container-horizontal" >
 
-                                                <div key={index} className="item">
-                                                <div className="course-one__single color-1">
-                                                <div className="course-one__image">
-                                                    <img className="eyeAfterLense" src={prod.firstImageUrl} alt="" />
-                                                        <i className="far fa-heart"></i>
-                                                        </div>
-                                    <div className="course-one__content">
-                                        <img className="lensImage " number={index} key={index} src={prod.lenseImageUrl} alt="" onMouseEnter={hoverDo} />
-                                            <br></br>
-                                            <br></br>
-                                            <h2 className="course-one__title"><a href="/course-details"> {prod.name} </a></h2>
-                                            <div className="course-one__stars">
-                                        <span className="course-one__stars-wrap">
+                                <div className="swiper-wrapper" >
+                                    <div className="swiper-slide item swiper-slide-duplicate swiper-slide-duplicate-active" >
+                                    <div className="row">
+                                     
+
                                         {
-                                            [...Array(prod.nbrStars)].map((x, i) =>
-                                            <i key={i} className="fa fa-star"></i>)}
-                                            
-                                        </span>
-                                                <span className="course-one__count">{prod.rate}</span>
-                                                <span className="course-one__stars-count">{prod.nbrOfReviews}</span>
-                                            </div>
-                                        
+                                            this.state.products.map((prod,index)=>{
+                                                return(
+                                        <div className="col-sm">
+                                                    <div className="itemproductionlist">
+                                                            <div className="course-one__single color-1">
+                                                                <div className="course-one__image">
+                                                                <img className="eyeAfterLense" src={prod.firstImageUrl} alt="" />
+                                                                <i className="far fa-heart"></i>
+                                                                </div>
+                                                            <div className="course-one__content">
+                                                                <img className="lensImage " src={prod.lenseImageUrl} alt="" number={index} key={index} onMouseEnter={this.hoverDo} onMouseLeave={this.leavelense} />
+                                                                    <br></br>
+                                                                    <br></br>
+                                                                    <h2 className="course-one__title"><a href="/course-details"> {prod.name} </a></h2>
+                                                                    <div className="course-one__stars">
+                                                                <span className="course-one__stars-wrap">
+                                                                {
+                                                                    [...Array(prod.nbrStars)].map((x, i) =>
+                                                                    <i key={i} className="fa fa-star"></i>)}
+                                                                    
+                                                                </span>
+                                                                        <span className="course-one__count">{prod.rate}</span>
+                                                                        <span className="course-one__stars-count">{prod.nbrOfReviews}</span>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                            </div>
+                                                    </div> 
                                         </div>
+
+                                                )
+                                            })
+                                        }
+                                        
                                     </div>
-                                </div> )})
-                                }
+                                   
+
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                             
                         
-                            </Swiper>
+                            
                         </div>
                     </div>
                 </section>
@@ -228,40 +296,76 @@ const CourseOne = ({textHeader,ismanequin}) => {
                     <div className="container">
                         <div className="course-one__carousel">
 
-                            <Swiper {...params} >
-                                {
-                                    manequinProducts.map((prod,index)=>{
-                                            return(
+                            
 
-                                                <div key={index} className="item">
-                                                <div className="course-one__single color-1">
-                                                <div className="course-one__image">
-                                                    <img className="lenseImage" src={prod.firstImageUrl} alt="lense image" />
-                                                        <i className="far fa-heart"></i>
-                                                        </div>
-                                    <div className="course-one__content">
-                                        {/* <img className="lensImage " number={index} key={index} src={prod.lenseImageUrl} alt="" onMouseEnter={hoverDo} /> */}
-                                           <button style={{borderRadius:"50%",backgroundColor:"dodgerblue",marginRight:"20px"}} number={index} key={index} onClick={clickDoManequin} > preview</button>
-                                            <br></br>
-                                            <br></br>
-                                            <h2 className="course-one__title"><a href="/course-details"> {prod.name} </a></h2>
-                                            <div className="course-one__stars">
-                                        <span className="course-one__stars-wrap">
-                                        {
-                                            [...Array(prod.nbrStars)].map((x, i) =>
-                                            <i key={i} className="fa fa-star"></i>)}
-                                            
-                                        </span>
-                                                <span className="course-one__count">{prod.rate}</span>
-                                                <span className="course-one__stars-count">{prod.nbrOfReviews}</span>
-                                            </div>
-                                        
-                                        </div>
+
+
+
+                        <div className="swiper-container swiper-container-initialized swiper-container-horizontal" >
+
+<div className="swiper-wrapper" >
+    <div className="swiper-slide item swiper-slide-duplicate swiper-slide-duplicate-active" >
+    <div className="row">
+     
+
+        {
+            this.state.manequinProducts.map((prod,index)=>{
+                return(
+        <div className="col-sm">
+                    <div className="itemproductionlist">
+                            <div className="course-one__single color-1">
+                                <div className="course-one__image">
+                                <img className="eyeAfterLense" src={prod.firstImageUrl} alt="" />
+                                <i className="far fa-heart"></i>
+                                </div>
+                            <div className="course-one__content">
+                                <button className="lensImage "alt="" number={index} key={index} onMouseEnter={this.hoverDoManequin} >
+                               
+                               {prod.isPreview ? "Back" : "Preview" } 
+                                
+                                </button>
+                                    <br></br>
+                                    <br></br>
+                                    <h2 className="course-one__title"><a href="/course-details"> {prod.name} </a></h2>
+                                    <div className="course-one__stars">
+                                <span className="course-one__stars-wrap">
+                                {
+                                    [...Array(prod.nbrStars)].map((x, i) =>
+                                    <i key={i} className="fa fa-star"></i>)}
+                                    
+                                </span>
+                                        <span className="course-one__count">{prod.rate}</span>
+                                        <span className="course-one__stars-count">{prod.nbrOfReviews}</span>
                                     </div>
-                                </div> )})
-                                }
-                        
-                            </Swiper>
+                                
+                                </div>
+                            </div>
+                    </div> 
+        </div>
+
+                )
+            })
+        }
+        
+    </div>
+   
+
+    </div>
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
                         </div>
                     </div>
                 </section>
@@ -272,6 +376,7 @@ const CourseOne = ({textHeader,ismanequin}) => {
 
         
         </div>
-    );
-}
-export default CourseOne;
+      );
+    }
+    }
+    
