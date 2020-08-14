@@ -2637,7 +2637,7 @@ a:visited {
 * 9. pricing styles
 */
 .pricing-one {
-  background-color: #f1f1f1;
+  background-color: white;
   padding-top: 120px;
   padding-bottom: 90px;
 }
@@ -6743,3 +6743,65 @@ html {
     height: 25px;
     border-radius: 10px;
   }
+
+  .main-header{
+    color:blue;
+  }
+  .secondary-header{
+    color:rgb(0, 110, 255);
+    font-size: 20px;
+  }
+  .sous-titre{
+    color: grey;
+  }
+  .para{
+     color:grey; 
+  }
+  .backgrounred{
+    color:black;
+  }
+  .btn{
+    width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(9, 0, 128);
+  color:beige;
+  }
+   .img2{
+
+    position: absolute;
+  z-index: 2;
+    bottom: 1450px;
+    width: 430px;
+    height: 250px;
+    border-radius: 50px 50px 150px 50px ;
+    margin-left: 30px;
+  }
+  .img1{
+    width: 350px;
+    height: 270px;
+border-radius: 150px 50px 50px 50px ;
+margin-left: 220px;
+  }
+  .img3{
+    position: absolute;
+    z-index: 2;
+      bottom: 750px;
+      width: 430px;
+      height:250px;
+      border-radius: 50px 50px 150px 50px ;
+      margin-left: 30px;
+  }
+.title-sante{
+  font-size: 40px;
+ 
+color: white;
+padding: 0 15% 10%  ;
+}
+.bg-pattern-effect{
+
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
