@@ -77,12 +77,7 @@ class NavOne extends Component {
                                          alt="Awesome Image" />
                                 </a>
                             </Link>
-                            {/* <div className="header__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
-                                <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-pinterest-p"></i></a>
-                                <a href="#"><i className="fab fa-instagram"></i></a>
-                            </div> */}
+                            
                             <button className="menu-toggler">
                                 <span className="kipso-icon-menu"></span>
                             </button>
@@ -96,18 +91,14 @@ class NavOne extends Component {
                                 <li>
                                     <a href="#">Nos Produits</a>
                                     <ul className="sub-menu">
-                                        <li><Link href="/about"><a>Lentilles de contact correctrices</a></Link></li>
-                                        <li><Link href="/gallery"><a>Lentilles de couleur SoftVision avec et sans correction</a></Link></li>
-                                        <li><Link href="/pricing"><a>Lentilles de couleur Mannequin</a></Link></li>
-                                        <li><Link href="#"><a>FAQ'S</a></Link></li>
+                                        <li><Link href="/lentille-contact-correctrice"><a>Lentilles de contact correctrices</a></Link></li>
+                                       {this.props.isIndex=="true" ?  (<li><Link href="#sansCorrection"><a>Lentilles de couleur SoftVision avec et sans correction</a></Link></li>) : (<li></li>) } 
+                                        <li><Link href="/mannequin-royal-collection"><a>Lentilles de couleur Mannequin</a></Link></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <Link href="/faq">FAQ</Link>
-                                    <ul className="sub-menu">
-                                        <li><Link href="/courses"><a>Courses</a></Link></li>
-                                        <li><Link href="/course-details"><a>Courses Details</a></Link></li>
-                                    </ul>
+                                    
                                 </li>
                                 <li>
                                     <Link href="/teachers"><a>VISION & TROUBLES VISUELS</a></Link>

@@ -1,5 +1,6 @@
     import React from 'react'; 
     const caracteristiques = [ 
+
         "Des lentilles correctrices à renouvellement trimestriel, assurent un confort optimisé de longue durée",
         "Correction de la myopie",
         "Puissances : Sph -0,25  à -20",
@@ -66,7 +67,7 @@
                                 <div className="progress">
                                     <div className="progress-bar" role="progressbar" style={{width:"99%"}} aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">99%</div>
                                 </div>
-                            <p>Précision</p>
+                            <p >Précision</p>
                                 <div className="progress">
                                     <div className="progress-bar" role="progressbar" style={{width:"99%"}} aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">99%</div>
                                 </div>

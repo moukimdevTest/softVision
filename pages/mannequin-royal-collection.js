@@ -26,18 +26,9 @@ const royalCollectionPage = () => {
          text1 ="Royal collection" desc1="MANNEQUIN LENTILLES DE CONTACT DE COULEUR "
          text2="Soft Vision" desc2="The touch of timeless beauty"
           />
-        <AboutTwo />
         <CourseOne textHeader="Découvrez notre nouvelle collection de produits" ismanequin="true" />
-        
         <VideoTwo />
-         {/* <CountdownKipso /> */}
-        <CourseCatOne />
-       {/* <CallToActionThree />
-        <BrandsTwo />
-        <BlogTwo />
-        <CallToActionFour /> */}
-        <SubscribeOne />
-        <Footer />
+            <Footer />
       </Layout>
   
     );

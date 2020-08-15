@@ -23,13 +23,13 @@ export default class VideoTwo extends Component {
                                 <div className="video-two__content">
                                     <h2 className="video-two__title"><span style={{color:"blue"}}>Soft</span> Vision<br />
                                        </h2>
-                                    <a href="#" className="thm-btn">Learn More</a>
+                                   
                                 </div>
                             </div>
                             <div className="col-lg-5 d-flex justify-content-lg-end justify-content-sm-start">
                                 <div className="my-auto">
                                     <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='rKnHWfw4Azo' onClose={() => this.setState({isOpen: false})} />
-                                    <div onClick={this.openModal} className="video-two__popup"><i className="fa fa-play"></i>
+                                    <div onClick={this.openModal} className="video-two__popup" style={{opacity:"0.5",marginLeft:"45%"}}><i className="fa fa-play"></i>
                                     </div>
                                 </div>
                             </div>
