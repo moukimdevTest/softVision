@@ -15,7 +15,7 @@ constructor() {
             rate:"4.8",
             nbrStars:5,
             firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-            lenseImageUrl:"/assets/images/lenses/blue.png",
+            lenseImageUrl:"/assets/images/True-dimensions/blue.jpg",
             imageTochange:"/assets/images/lenses/eye-blue.jpg",
             nbrOfReviews:250,
             isPreview : false
@@ -27,7 +27,7 @@ constructor() {
             rate:"4.8",
             nbrStars:2,
             firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-            lenseImageUrl:"/assets/images/lenses/blue.png",
+            lenseImageUrl:"/assets/images/True-dimensions/iimg11.jpg",
             imageTochange:"/assets/images/gallery/img11.jpg",
             nbrOfReviews:250,
             isPreview : false
@@ -38,7 +38,7 @@ constructor() {
             rate:"3.5",
             nbrStars:4,
             firstImageUrl:"/assets/images/soft/imageToChange3.jpg",
-            lenseImageUrl:"/assets/images/lenses/blue.png",
+            lenseImageUrl:"/assets/images/True-dimensions/iimg13.jpg",
             imageTochange:"/assets/images/gallery/img13.jpg",
             nbrOfReviews:250,
             isPreview : false
@@ -48,7 +48,7 @@ constructor() {
             rate:"4.8",
             nbrStars:5,
             firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-            lenseImageUrl:"/assets/images/lenses/blue.png",
+            lenseImageUrl:"/assets/images/True-dimensions/iimg9.jpg",
             imageTochange:"/assets/images/gallery/img9.jpg",
             nbrOfReviews:250,
             isPreview : false
@@ -58,7 +58,7 @@ constructor() {
             rate:"4.8",
             nbrStars:5,
             firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-            lenseImageUrl:"/assets/images/lenses/blue.png",
+            lenseImageUrl:"/assets/images/True-dimensions/iimg9.jpg",
             imageTochange:"/assets/images/gallery/img9.jpg",
             nbrOfReviews:250,
             isPreview : false
@@ -80,84 +80,94 @@ constructor() {
             name :"MAJESTIC GREY",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            firstImageUrl:"/assets/images/soft/EYE-Majestic-Grey-A-74-Green-Gray-III.jpg" ,
+            secondImageUrl:"/assets/images/manequin/majesticGrey.png",
             nbrOfReviews:250,
             isPreview : false
 
         },
        
         {
-            name :"MAJESTIC GREY",
+            name :"SEDUCTIVE GREY",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange4.jpg" ,
+            firstImageUrl:"/assets/images/soft/EYE-Seductive-Grey-A-92-Gray-III.jpg" ,
             secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
             nbrOfReviews:250,
             isPreview : false
 
         },
         {
-            name :"MAJESTIC GREY",
+            name :"LORDLY GREY",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange6.jpg" ,
-            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            firstImageUrl:"/assets/images/soft/EYE-Lordly-Grey-A-74-Husky-Gray-III-copie.jpg" ,
+            secondImageUrl:"/assets/images/manequin/mannequin-lentille-de-contact-couleur--768x768.jpg",
             nbrOfReviews:250,
             isPreview : false
 
         }
         ,
         {
-            name :"MAJESTIC GREY",
+            name :"SAHARA BROWN",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            firstImageUrl:"/assets/images/soft/EYE-Sahara-Brown-A-73-Brown-II.jpg" ,
+            secondImageUrl:"/assets/images/manequin/sahara-brown-lentilles-de-couleur-mannequin-450x628.jpg",
             nbrOfReviews:250,
             isPreview : false
 
         },
         {
-            name :"MAJESTIC GREY",
+            name :"SWEET GREY",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            firstImageUrl:"/assets/images/soft/EYE-Sweet-Grey-PNB-Gray-I.jpg" ,
+            secondImageUrl:"/assets/images/manequin/sweetGrey.jpg",
             nbrOfReviews:250,
                     isPreview : false
 
         },
         {
-            name :"MAJESTIC GREY",
+            name :"DIVINE CRYSTAL",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            firstImageUrl:"/assets/images/soft/EYE-Divine-Crystal-A-89-Crystal-III.jpg" ,
+            secondImageUrl:"/assets/images/manequin/Divine-crystal-lentilles-de-couleur-mannequin.png-768x726.jpeg",
             nbrOfReviews:250,
                     isPreview : false
 
         },
         {
-            name :"MAJESTIC GREY",
+            name :"TENDER HAZEL",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            firstImageUrl:"/assets/images/soft/EYE-Tender-Hazel-A-91-Hazel-II.jpg" ,
+            secondImageUrl:"/assets/images/manequin/tendelHazel.jpg",
             nbrOfReviews:250,
                     isPreview : false
 
         },
         {
-            name :"MAJESTIC GREY",
+            name :"ROMANTIC GREY",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
-            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
+            firstImageUrl:"/assets/images/soft/EYE-Romantic-Grey-A-90-Gray-III.jpg" ,
+            secondImageUrl:"/assets/images/manequin/mannequin-contact-lenses-by-soft-vision.jpg",
             nbrOfReviews:250,
                     isPreview : false
 
         },
+        {
+            name :"ROMANTIC GREY",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/manequin/EYE-Romantic-Grey-A-90-Gray-III.jpg" ,
+            secondImageUrl:"/assets/images/manequin/mannequin-contact-lenses-by-soft-vision.jpg",
+            nbrOfReviews:250,
+                    isPreview : false
+
+        }
         ],
     };
   } 
@@ -181,7 +191,7 @@ constructor() {
      setTimeout(()=>{
         eyeAfterLense.setAttribute("src",products[a].secondImageUrl)
 
-     },500)
+     },790)
         setTimeout(()=>{eyeAfterLense.classList.add("kenburns-top");  
                 },800)
                   function  callback(e) {
@@ -314,11 +324,11 @@ constructor() {
                                 <i className="far fa-heart"></i>
                                 </div>
                             <div className="course-one__content">
-                                <button className="lensImage "alt="" number={index} key={index} onMouseEnter={this.hoverDoManequin} >
+                               <center> <button style={{backgroundColor:"dodgerBlue",color:"white"}} className="lensImage "alt="" number={index} key={index} onMouseEnter={this.hoverDoManequin} >
                                
                                {prod.isPreview ? "Back" : "Preview" } 
                                 
-                                </button>
+                                </button></center>
                                     <br></br>
                                     <br></br>
                                     <h2 className="course-one__title"><a href="/course-details"> {prod.name} </a></h2>
