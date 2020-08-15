@@ -9,7 +9,7 @@ const myopie = () => {
     return (
         <Layout pageTitle="SoftVision | Myopie">
             <NavOne />
-            <PageHeader title="Myopie" />
+            <PageHeader title=" Qu’est-Ce Que Myopie" />
             <Sante
              paragraphe="La myopie n’est pas une maladie mais une anomalie de vision qui se traduit par une vision nette de près et une vision flou des objets de loin. Un œil myope est un œil trop long qui se caractérise par la formation de l’image en avant de la rétine, le nerf optique transmettra donc une image flou au cerveau. Un sujet myope est capable de voir parfaitement de près en revanche de loin plus la source du regard est éloignée et plus l’image sera de moins en moins nette. La myopie est un défaut visuel très fréquent et sa prévalence ne cesse d’augmenter. La correction de la myopie se fait avec des lunettes, des lentilles de contact et désormais avec la chirurgie réfractive."
              paragraphe1="Il existe différents niveaux de myopie cela varie d’une personne à une autre. En ophtalmologie et en optométrie on distingue trois niveau: léger, moyen et fort. La gravité des défauts visuels est mesurés en dioptrie, et le degrés de myopie se traduit par le signe ” (-) moins” .

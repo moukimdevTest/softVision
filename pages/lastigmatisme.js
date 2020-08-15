@@ -9,7 +9,7 @@ const lastigmatisme = () => {
     return (
         <Layout pageTitle="SoftVision | l'astigmatisme">
             <NavOne />
-            <PageHeader title="l'astigmatisme" />
+            <PageHeader title=" Qu’est-Ce Que l'astigmatisme" />
             <Sante
              paragraphe="L’astigmatisme est un défaut visuel qui peut survenir seul ou plus fréquemment en association avec d’autres troubles de la vision. Les astigmates sont souvent myopes ou hypermétropes. Un oeil astigmate est caractérisé par une vision floue et déformée des objets de loin comme de près ainsi qu’une difficulté à distinguer les lignes horizontales, verticales et obliques. Une personne astigmate à tendance à confondre les signes tels que lettres ou les chiffres qui se rapprochent ( La lettre N et M ou Le chiffre 8 ou 9)."
              paragraphe1="On parle d’astigmatisme lorsque l’image ne se projette pas de façon nette sur la rétine. Cela est liée à un défaut de courbure de la cornée ou du cristallin. En effet la forme de la cornée ou du cristallin se révèle plus ovale que ronde et n’a pas de courbure régulière ce qui entraîne une distorsion des rayons lumineux qui pénètrent dans l’œil. La vision est donc imprécise."
