@@ -8,7 +8,7 @@ const PageHeader = (props) => {
             <div className="container" >
             <hr style={{width:"50px",height:"2px", marginLeft:"300px",backgroundColor:"gray"}}></hr>
             
-    <h1 className="title-sante">Qu’est-Ce Que {props.title}?</h1>
+    <h1 className="title-sante">{props.title}?</h1>
     
             </div>
             <div className="bg-pattern-effect">

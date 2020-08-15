@@ -101,19 +101,19 @@ class NavOne extends Component {
                                     
                                 </li>
                                 <li>
-                                    <Link href="/teachers"><a>VISION & TROUBLES VISUELS</a></Link>
+                                    <Link href="/anomalies-de-la-vision"><a>VISION & TROUBLES VISUELS</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/teachers"><a>La myopie</a></Link></li>
-                                        <li><Link href="/teacher-details"><a>L’hypermétropie</a></Link></li>
-                                        <li><Link href="/become-teacher"><a>L’astigmatisme</a></Link></li>
-                                        <li><Link href="/become-teacher"><a>La presbytie</a></Link></li>
+                                        <li><Link href="/myopie"><a>La myopie</a></Link></li>
+                                        <li><Link href="/hypermetropie"><a>L’hypermétropie</a></Link></li>
+                                        <li><Link href="/lastigmatisme"><a>L’astigmatisme</a></Link></li>
+                                        <li><Link href="/presbytie"><a>La presbytie</a></Link></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link href="/news"><a>SANTÉ OCULAIRE</a></Link>
+                                    <Link href="/sante-oculaire"><a>SANTÉ OCULAIRE</a></Link>
                                     <ul className="sub-menu">
-                                        <li><Link href="/news"><a>La sécheresse oculaire</a></Link></li>
-                                        <li><Link href="/news-details"><a>La conjonctivite</a></Link></li>
+                                        <li><Link href="/secheresse-oculaire"><a>La sécheresse oculaire</a></Link></li>
+                                        <li><Link href="/conjonctivite"><a>La conjonctivite</a></Link></li>
                                     </ul>
                                 </li>
                                 <li>
