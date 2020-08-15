@@ -6,6 +6,14 @@ const SliderOne = ({classgradient,image1,image2,size,text1,text2,desc1,desc2}) =
 
     const [swiper, setSwiper] = useState(null);
 
+    const hoverIn = (e)=>{
+e.target.style.opacity = "0.9";
+
+    }
+    const hoverOut = (e)=>{
+        e.target.style.opacity = "0.3";
+
+    }
     const goNext = () => {
         if (swiper !== null) {
           swiper.slideNext();
@@ -32,11 +40,10 @@ const SliderOne = ({classgradient,image1,image2,size,text1,text2,desc1,desc2}) =
                             {/* <img src="/assets/images/slider-1-scratch.png" alt="" className="banner-one__scratch" /> */}
                             <img src={image1} className="image1 banner-one__scratch bounce-in-top" alt="" width={size} height="auto" />
                             <div className="row no-gutters">
-                                <div className="col-xl-12">
+                                <div className="col-xl-12" >
                                     <h3 className="banner-one__title banner-one__light-color">{text1}
                                         </h3>
                                     <p className="banner-one__tag-line">{desc1}</p>
-                                    <a href="#" className="thm-btn banner-one__btn">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +58,6 @@ const SliderOne = ({classgradient,image1,image2,size,text1,text2,desc1,desc2}) =
                                 <div className="col-xl-12">
                                     <h3 className="banner-one__title banner-one__light-color">{text2}</h3>
                                     <p className="banner-one__tag-line">{desc2}</p>
-                                    <a href="#" className="thm-btn banner-one__btn">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -59,8 +65,8 @@ const SliderOne = ({classgradient,image1,image2,size,text1,text2,desc1,desc2}) =
                 </Swiper>
             </section>
             <div className="banner-carousel-btn">
-                <div onClick={goPrev} className="banner-carousel-btn__left-btn banner-arrow"><i className="kipso-icon-left-arrow"></i></div>
-                <div onClick={goNext} className="banner-carousel-btn__right-btn banner-arrow"><i className="kipso-icon-right-arrow"></i></div>
+                <div onClick={goPrev} className="flesh banner-carousel-btn__left-btn banner-arrow" style={{opacity:"0.3"}} onMouseEnter={hoverIn} onMouseLeave={hoverOut} ><i className="kipso-icon-left-arrow"></i></div>
+                <div onClick={goNext} className="flesh banner-carousel-btn__right-btn banner-arrow" style={{opacity:"0.3"}} onMouseEnter={hoverIn} onMouseLeave={hoverOut} ><i className="kipso-icon-right-arrow"></i></div>
             </div>
     
         </div>

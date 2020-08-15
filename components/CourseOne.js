@@ -231,7 +231,7 @@ constructor() {
         {
             this.props.ismanequin==="false" ? (
 
-                <section className="course-one course-one__teacher-details home-one">
+                <section id="sansCorrection" className="course-one course-one__teacher-details home-one">
                     <div className="container">
                         <div className="course-one__carousel">
 
@@ -254,7 +254,7 @@ constructor() {
                                                                 <i className="far fa-heart"></i>
                                                                 </div>
                                                             <div className="course-one__content">
-                                                                <img className="lensImage " src={prod.lenseImageUrl} alt="" number={index} key={index} onMouseEnter={this.hoverDo} onMouseLeave={this.leavelense} />
+                                                                <center><img className="lensImage " src={prod.lenseImageUrl} alt="" number={index} key={index} onMouseEnter={this.hoverDo} onMouseLeave={this.leavelense} /></center>
                                                                     <br></br>
                                                                     <br></br>
                                                                     <h2 className="course-one__title"><a href="/course-details"> {prod.name} </a></h2>
@@ -292,15 +292,10 @@ constructor() {
                     </div>
                 </section>
             ) : (
-                <section className="course-one course-one__teacher-details home-one">
-                    <div className="container">
+                <div>
+                <section className="course-one course-one__teacher-details home-one" >
+                    <div className="container" >
                         <div className="course-one__carousel">
-
-                            
-
-
-
-
                         <div className="swiper-container swiper-container-initialized swiper-container-horizontal" >
 
 <div className="swiper-wrapper" >
@@ -368,7 +363,66 @@ constructor() {
 
                         </div>
                     </div>
-                </section>
+              
+               
+  </section>
+  <div style={{backgroundColor:"#def6fe",color:"black"}}>
+  <hr></hr>
+     <div style={{margin:"0 27%",paddingBottom:"25px"}}>
+    <center><h1 style={{fontFamily:"Cinzel",fontSize:"30px",fontWeight:"600",letterSpacing:"1px"}} >THE TIMELESS BEAUTY TOUCH</h1></center>
+    <p className="manequinP">Porter des lentilles colorées n’a jamais été aussi à la mode. Mannequin propose une palette de couleur au design naturel qui vous permettent un changement radical ou subtil de la couleur de vos yeux selon l’effet recherché.</p>
+    <center><img src="/assets/images/manequin/m-2PACKAGING.png" alt="mannequin paquage" width="300" height="auto" /></center>
+      <br></br>
+        <h2> CARACTÉRISTIQUES+</h2>
+        <ul className="manequinUl">
+            <li><span>Confort</span>
+            <div>
+            Les lentilles mannequin sont souples et procurent un confort optimal tout au long de la journée.
+            </div></li>
+
+            <li><span>Oxygénation</span>
+                <div>
+                Les lentilles mannequin sont hautement perméable à l'oxygène, assurent l'hydratation de vos yeux durant tout le port.
+                </div>
+            </li>
+
+            <li><span>Protègent vos yeux des UV</span>
+            <div>
+            La gamme de lentilles mannequin est conçue avec un filtre anti-UV, qui garantit une protection supplémentaire à vos yeux .
+                </div></li>
+
+            <li><span>Des couleurs chatoyantes</span>
+            <div>
+            Des lentilles de couleur qui habillent votre regard de manière naturelle.            </div></li>
+
+        </ul>
+<br></br>
+       <center> <a  role="button" href="/contact" target="_blank"><span className="opticienchezvous">Trouver un opticien chez vous</span></a></center>
+   
+   
+    </div>
+    <br></br>
+    <div className="background-shaped">
+        <div className="row">
+        <div className="col-sm">
+        <div style={{margin:"55px "}}>
+        <h1 style={{color:"white"}}>Lentilles Mannequin</h1>
+        <hr></hr>
+        <p>Que Ce Soit Saisonnier, Pour Une Soirée Ou Pour S'offrir Un Regard Plus Intense, Les Lentilles De Couleur Mannequin Redonnent Du Pep's À Votre Regard !
+            Une Collection Sophistiquée Qui Se Compose De Huit Couleurs Naturelles Faites Pour Sublimer Et Émanciper Votre Regard Au Quotidien.</p>
+        </div>
+        </div>
+        <div className="col-sm">
+           <img src="/assets/images/manequin/mannequin-lentilles.jpg" alt="mannequin lentilles"  />
+            <br></br>
+            <br></br>
+            <br></br>
+        </div>
+        </div>
+
+   </div>
+  </div>
+  </div>
             )
 
         }

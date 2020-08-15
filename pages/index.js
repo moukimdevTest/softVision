@@ -20,7 +20,7 @@ const HomePage = () => (
 
     <Layout pageTitle="SOFT VISION | LENTILLES DE CONTACT CORRECTRICES ET COLORÉES">
       {/* <Topbar /> */}
-      <NavOne />
+      <NavOne isIndex="true"/>
       <SliderOne 
       classgradient="banner-one__slide banner-one__slide-one" 
       image1="/assets/images/soft/eyelense.jpg" image2="/assets/images/soft/slider-2.png" size="500" 

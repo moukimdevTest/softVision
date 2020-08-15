@@ -10,6 +10,9 @@ const PageHeader = (props) => {
                     <li className="active"><a href="#">{ props.title }</a></li>
                 </ul>
             </div>
+            <div className="bg-pattern-effect">
+                        <img src="/assets/images/bg-pattern.png" alt="" />
+                    </div>
         </section>
     );
 };
