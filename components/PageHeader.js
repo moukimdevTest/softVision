@@ -4,16 +4,19 @@ import Link from 'next/link';
 const PageHeader = (props) => {
     return (
         <section className="inner-banner" style={{backgroundImage:" linear-gradient(130deg, #0700dd 0%, #00f2ff 77%)"}} >
+           
             <div className="container" >
-                <ul className="list-unstyled thm-breadcrumb">
-                    <li><Link href="/"><a>Home</a></Link></li>
-                    <li className="active"><a href="#">{ props.title }</a></li>
-                </ul>
+            <hr style={{width:"50px",height:"2px", marginLeft:"300px",backgroundColor:"gray"}}></hr>
+            
+    <h1 className="title-sante">Qu’est-Ce Que {props.title}?</h1>
+    
             </div>
             <div className="bg-pattern-effect">
-                        <img src="/assets/images/bg-pattern.png" alt="" />
+                        <img src="/assets/images/sante/bg-pattern.png" alt="" />
                     </div>
         </section>
+       
+   
     );
 };
 
