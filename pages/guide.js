@@ -12,7 +12,6 @@ const GuidePage = () => {
             <NavOne />
             <PageHeader title="Guide" />
             <Guide />
-            <CallToActionOne />
             <Footer />
         </Layout>
     );

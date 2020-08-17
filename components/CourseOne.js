@@ -1,7 +1,5 @@
-import React, { useState,useRef, Component } from 'react'
-import Swiper from 'react-id-swiper';
+import React, { Component } from 'react'
 import 'swiper/css/swiper.css';
-import Link from 'next/link';
 
 export default class App extends Component {
 
@@ -14,7 +12,7 @@ constructor() {
             name :"lentille bleu",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
             lenseImageUrl:"/assets/images/True-dimensions/blue.jpg",
             imageTochange:"/assets/images/lenses/eye-blue.jpg",
             nbrOfReviews:250,
@@ -26,7 +24,7 @@ constructor() {
             name :"lentille maron",
             rate:"4.8",
             nbrStars:2,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
             lenseImageUrl:"/assets/images/True-dimensions/iimg11.jpg",
             imageTochange:"/assets/images/gallery/img11.jpg",
             nbrOfReviews:250,
@@ -37,7 +35,7 @@ constructor() {
             name :"lentille Vert",
             rate:"3.5",
             nbrStars:4,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg",
+            firstImageUrl:"/assets/images/soft/imageToChange7.png",
             lenseImageUrl:"/assets/images/True-dimensions/iimg13.jpg",
             imageTochange:"/assets/images/gallery/img13.jpg",
             nbrOfReviews:250,
@@ -47,7 +45,7 @@ constructor() {
             name :"lentille bleu",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
             lenseImageUrl:"/assets/images/True-dimensions/iimg9.jpg",
             imageTochange:"/assets/images/gallery/img9.jpg",
             nbrOfReviews:250,
@@ -57,7 +55,7 @@ constructor() {
             name :"lentille bleu",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
             lenseImageUrl:"/assets/images/True-dimensions/iimg9.jpg",
             imageTochange:"/assets/images/gallery/img9.jpg",
             nbrOfReviews:250,
@@ -67,7 +65,7 @@ constructor() {
             name :"lentille bleu",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange3.jpg" ,
+            firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
             lenseImageUrl:"/assets/images/lenses/blue.png",
             imageTochange:"/assets/images/lenses/eye-blue.jpg",
             nbrOfReviews:250,
@@ -80,7 +78,7 @@ constructor() {
             name :"MAJESTIC GREY",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/EYE-Majestic-Grey-A-74-Green-Gray-III.jpg" ,
+            firstImageUrl:"/assets/images/manequin/EYE-Majestic-Grey-A-74-Green-Gray-III.jpg" ,
             secondImageUrl:"/assets/images/manequin/majesticGrey.png",
             nbrOfReviews:250,
             isPreview : false
@@ -91,7 +89,7 @@ constructor() {
             name :"SEDUCTIVE GREY",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/EYE-Seductive-Grey-A-92-Gray-III.jpg" ,
+            firstImageUrl:"/assets/images/manequin/EYE-Seductive-Grey-A-92-Gray-III.jpg" ,
             secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
             nbrOfReviews:250,
             isPreview : false
@@ -101,7 +99,7 @@ constructor() {
             name :"LORDLY GREY",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/EYE-Lordly-Grey-A-74-Husky-Gray-III-copie.jpg" ,
+            firstImageUrl:"/assets/images/manequin/EYE-Lordly-Grey-A-74-Husky-Gray-III-copie.jpg" ,
             secondImageUrl:"/assets/images/manequin/mannequin-lentille-de-contact-couleur--768x768.jpg",
             nbrOfReviews:250,
             isPreview : false
@@ -112,7 +110,7 @@ constructor() {
             name :"SAHARA BROWN",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/EYE-Sahara-Brown-A-73-Brown-II.jpg" ,
+            firstImageUrl:"/assets/images/manequin/EYE-Sahara-Brown-A-73-Brown-II.jpg" ,
             secondImageUrl:"/assets/images/manequin/sahara-brown-lentilles-de-couleur-mannequin-450x628.jpg",
             nbrOfReviews:250,
             isPreview : false
@@ -122,7 +120,7 @@ constructor() {
             name :"SWEET GREY",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/EYE-Sweet-Grey-PNB-Gray-I.jpg" ,
+            firstImageUrl:"/assets/images/manequin/EYE-Sweet-Grey-PNB-Gray-I.jpg" ,
             secondImageUrl:"/assets/images/manequin/sweetGrey.jpg",
             nbrOfReviews:250,
                     isPreview : false
@@ -132,7 +130,7 @@ constructor() {
             name :"DIVINE CRYSTAL",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/EYE-Divine-Crystal-A-89-Crystal-III.jpg" ,
+            firstImageUrl:"/assets/images/manequin/EYE-Divine-Crystal-A-89-Crystal-III.jpg" ,
             secondImageUrl:"/assets/images/manequin/Divine-crystal-lentilles-de-couleur-mannequin.png-768x726.jpeg",
             nbrOfReviews:250,
                     isPreview : false
@@ -142,7 +140,7 @@ constructor() {
             name :"TENDER HAZEL",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/EYE-Tender-Hazel-A-91-Hazel-II.jpg" ,
+            firstImageUrl:"/assets/images/manequin/EYE-Tender-Hazel-A-91-Hazel-II.jpg" ,
             secondImageUrl:"/assets/images/manequin/tendelHazel.jpg",
             nbrOfReviews:250,
                     isPreview : false
@@ -152,7 +150,7 @@ constructor() {
             name :"ROMANTIC GREY",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/EYE-Romantic-Grey-A-90-Gray-III.jpg" ,
+            firstImageUrl:"/assets/images/manequin/EYE-Romantic-Grey-A-90-Gray-III.jpg" ,
             secondImageUrl:"/assets/images/manequin/mannequin-contact-lenses-by-soft-vision.jpg",
             nbrOfReviews:250,
                     isPreview : false
@@ -180,11 +178,6 @@ constructor() {
       console.log(this.state);
         const   products = [...this.state.manequinProducts];
         let a = e.target.getAttribute('number');
-        // let product = {...products[a]};
-        // product.isPreview =true;
-        // products[a] = product;
-        // this.setState({manequinProducts: products}) 
-
         const lensImage = document.querySelectorAll(".lensImage")[a];
         const eyeAfterLense = document.querySelectorAll('.eyeAfterLense')[a];
         e.target.classList.add("imageMoved2");
@@ -250,13 +243,13 @@ constructor() {
 
                                 <div className="swiper-wrapper" >
                                     <div className="swiper-slide item swiper-slide-duplicate swiper-slide-duplicate-active" >
-                                    <div className="row">
+                                    <div className="row productsRow">
                                      
 
                                         {
                                             this.state.products.map((prod,index)=>{
                                                 return(
-                                        <div className="col-sm">
+                                        <div key={index} className="col-sm">
                                                     <div className="itemproductionlist">
                                                             <div className="course-one__single color-1">
                                                                 <div className="course-one__image">
@@ -310,7 +303,7 @@ constructor() {
 
 <div className="swiper-wrapper" >
     <div className="swiper-slide item swiper-slide-duplicate swiper-slide-duplicate-active" >
-    <div className="row">
+    <div className="row productsRow">
      
 
         {
@@ -320,7 +313,7 @@ constructor() {
                     <div className="itemproductionlist">
                             <div className="course-one__single color-1">
                                 <div className="course-one__image">
-                                <img className="eyeAfterLense" src={prod.firstImageUrl} alt="" />
+                                <img style={{maxWidth:"300px",maxHeight:"200px"}} className="eyeAfterLense" src={prod.firstImageUrl} alt="" />
                                 <i className="far fa-heart"></i>
                                 </div>
                             <div className="course-one__content">

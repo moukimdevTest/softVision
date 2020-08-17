@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState,userRef} from 'react';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 
 const SliderOne = ({classgradient,image1,image2,size,text1,text2,desc1,desc2}) => {
 
+    const secondImage = React.createRef(null); 
+    const firstImage = React.createRef(null); 
     const [swiper, setSwiper] = useState(null);
 
     const hoverIn = (e)=>{
@@ -17,13 +19,19 @@ e.target.style.opacity = "0.9";
     const goNext = () => {
         if (swiper !== null) {
           swiper.slideNext();
-        //   
+          secondImage.current.classList.add("bounce-in-top")
+          firstImage.current.classList.remove("bounce-in-top")
+
+    
         }
     };
 
     const goPrev = () => {
         if (swiper !== null) {
+            firstImage.current.classList.add("bounce-in-top")
+            secondImage.current.classList.remove("bounce-in-top")
           swiper.slidePrev();
+          
         }
     };
 
@@ -38,7 +46,7 @@ e.target.style.opacity = "0.9";
                             <div className="banner-one__bubble-2"></div>
                             <div className="banner-one__bubble-3"></div>
                             {/* <img src="/assets/images/slider-1-scratch.png" alt="" className="banner-one__scratch" /> */}
-                            <img src={image1} className="image1 banner-one__scratch bounce-in-top" alt="" width={size} height="auto" />
+                            <img ref={firstImage} src={image1} className="image1 banner-one__scratch bounce-in-top" alt="" width={size} height="auto" />
                             <div className="row no-gutters">
                                 <div className="col-xl-12" >
                                     <h3 className="banner-one__title banner-one__light-color">{text1}
@@ -52,7 +60,7 @@ e.target.style.opacity = "0.9";
                         <div className="container">
                             <div className="banner-one__bubble-2"></div>
                             <div className="banner-one__bubble-3"></div>
-                            <img  src={image2} alt="" className="image1 banner-one__scratch" width={size} height="auto" />
+                            <img ref={secondImage} src={image2} alt="" className="image1 banner-one__scratch" width={size} height="auto" />
                             {/* <img src="/assets/images/slider-1-person-2.png" className="banner-one__person" alt="" /> */}
                             <div className="row no-gutters">
                                 <div className="col-xl-12">

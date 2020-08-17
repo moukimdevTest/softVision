@@ -97,7 +97,7 @@ class NavOne extends Component {
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link href="/faq">FAQ</Link>
+                                    <Link href="/faq"><a>FAQ</a></Link>
                                     
                                 </li>
                                 <li>

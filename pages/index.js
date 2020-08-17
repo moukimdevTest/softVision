@@ -14,7 +14,9 @@ import BlogTwo from "../components/BlogTwo";
 import CallToActionFour from "../components/CallToActionFour";
 import SubscribeOne from "../components/SubscribeOne";
 
-
+console.log("*********************************************************")
+console.log("this site was created and designed by Moukim Hfaidh under Comcept Agency ")
+console.log("*********************************************************")
 
 const HomePage = () => (
 
@@ -31,12 +33,7 @@ const HomePage = () => (
       <AboutTwo />
       <CourseOne textHeader="Découvrez nos produits populaires" ismanequin="false" />
       <VideoTwo />
-       {/* <CountdownKipso /> */}
       <CourseCatOne />
-     {/* <CallToActionThree />
-      <BrandsTwo />
-      <BlogTwo />
-      <CallToActionFour /> */}
       <SubscribeOne />
       <Footer />
     </Layout>

@@ -1,7 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 const Footer = () => {
+    const router = useRouter()
 
+    const searchGo = (e)=>{
+        e.preventDefault();
+        router.push("/faq");
+    }
     function scrollTop() {
         window.scrollTo(0, 0);
     }
@@ -21,16 +27,17 @@ const Footer = () => {
                                                 <li><a href="/gallery">Produits</a></li>
                                                 <li><a href="/gallery">Rejoignez-nous</a></li>
                                                 <li><a href="/gallery">Guide</a></li>
-                                            </ul>
-                                            <ul className="list-unstyled footer-widget__link-list">
                                                 <li><a href="/gallery">Aide </a></li>
                                                 <li><a href="/gallery">Contact</a></li>
-                                                
                                             </ul>
+                                            {/* <ul className="list-unstyled footer-widget__link-list">
+                                               
+                                                
+                                            </ul> */}
                                         </div>
                                     </div>
                                 </div>
-                                <div style={{marginLeft:"100px"}} className="col-xl-3 col-lg-6 col-sm-12">
+                                <div  className="col-xl-3 col-lg-6 col-sm-12">
                                     <div className="footer-widget footer-widget__gallery">
                                         <h2 className="footer-widget__title">Galerie</h2>
                                         <div className="photo-container1">
@@ -45,7 +52,7 @@ const Footer = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div style={{marginLeft:"200px"}} className="col-xl-3 col-lg-6 col-sm-12">
+                                <div  className="col-xl-3 col-lg-6 col-sm-12">
                                     <div className="footer-widget footer-widget__about">
                                         <h2 className="footer-widget__title">À propos</h2>
                                         <p className="footer-widget__text">Des lentilles de contact souples adaptées à chaque type de correction visuelle. Grace à sa composition innovante, les lentilles de la gamme Soft Vision procurent un excellent confort de longue durée, une bonne hydratation et oxygénation de vos yeux.  </p>
@@ -79,9 +86,9 @@ const Footer = () => {
                 <div className="search-popup">
                     <div className="search-popup__overlay custom-cursor__overlay search-overlay"></div>
                     <div className="search-popup__inner">
-                        <form action="#" className="search-popup__form">
-                            <input type="text" name="search" placeholder="Type here to Search...." />
-                            <button type="submit"><i className="kipso-icon-magnifying-glass"></i></button>
+                        <form className="search-popup__form" onSubmit={searchGo}>
+                            <input type="text" name="search" placeholder="Ecrire ici pour chercher...." />
+                            <button type="submit" ><i className="kipso-icon-magnifying-glass"></i></button>
                             <div className="cancel"><i className="fas fa-times-circle"></i></div>
                         </form>
                     </div>

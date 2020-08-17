@@ -27,7 +27,7 @@
                         </div>
                     <div className="row">
                         <div className="col-lg-6">
-                            <img src="/assets/images/gallery/img1.jpg" width="580px" height="383" style={{borderRadius:"90px 50px 50px 50px"}} alt=""/>
+                            <img className="imageCorrectrice" src="/assets/images/gallery/img1.jpg" width="580px" height="383" style={{borderRadius:"90px 50px 50px 50px"}} alt=""/>
                         </div>
                         <div className="col-lg-6">
                             <ul className="monta" >

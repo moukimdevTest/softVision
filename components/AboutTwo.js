@@ -85,24 +85,22 @@ export default class AboutTwo extends Component {
                                             {/* <p className="about-two__single-text"></p> */}
                                             <Link
                                             className="about-two__single-text"
-    activeClass="active"
-    to="gohere"
-    spy={true}
-    smooth={true}
-    offset={-70}
-    duration={1200}
->En savoir plus</Link>
+                                            activeClass="active"
+                                            to="gohere"
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-70}
+                                            duration={1200}
+                                            ><a>En savoir plus</a></Link>
                                         </div>
                                     </div>
                                    
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6 d-flex justify-content-xl-end justify-content-sm-center">
-                            <div >
-                                <img className="hoveringChange" src="/assets/images/about-1-1.png" alt="" width="250" height="auto"  onMouseEnter={this.mouseEnterDo} />
+                        <div className="col-xl-6">
+                              <center>  <img className="hoveringChange" src="/assets/images/about-1-1.png" alt="" width="250" height="auto"  onMouseEnter={this.mouseEnterDo} /></center>
                                  
-                            </div>
                         </div>
                     </div>
                 </div>

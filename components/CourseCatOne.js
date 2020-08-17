@@ -54,7 +54,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i><img src="https://img.icons8.com/color/48/000000/city-guide.png"/></i>
                                 </div>
-                                <h3 className="course-category-one__title"><Link href="/guide"><a href="contact">GUIDE D'UTILISATION SOFTVISION</a></Link></h3>
+                                <h3 className="course-category-one__title"><Link href="/guide"><a href="/guide">GUIDE D'UTILISATION SOFTVISION</a></Link></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -62,7 +62,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i><img src="https://img.icons8.com/carbon-copy/100/000000/ophthalmology.png"/></i>
                                 </div>
-                                <h3 className="course-category-one__title"><Link href="/anomalies"><a href="contact">LES ANOMALIES DE LA VISION</a></Link></h3>
+                                <h3 className="course-category-one__title"><Link href="/anomalies-de-la-vision"><a href="/anomalies-de-la-vision">LES ANOMALIES DE LA VISION</a></Link></h3>
                             </div>
                         </div>
                     </Swiper>
@@ -138,7 +138,7 @@ const CourseCatOne = () => {
 
                 </div>
 
-                <Link a href="/gallery"><a href="/gallery" className="thm-btn">Voir tous les produits</a></Link>
+                <Link href="/gallery"><a href="/gallery" className="thm-btn">Voir tous les produits</a></Link>
             </div>
         </section>
     );
