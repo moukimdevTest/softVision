@@ -14,7 +14,7 @@ constructor() {
             nbrStars:5,
             firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
             lenseImageUrl:"/assets/images/True-dimensions/blue.jpg",
-            imageTochange:"/assets/images/lenses/eye-blue.jpg",
+            imageTochange:"/assets/images/gallery/img11.jpg",
             nbrOfReviews:250,
             isPreview : false
 
@@ -260,7 +260,7 @@ constructor() {
                                                                 <center><img className="lensImage " src={prod.lenseImageUrl} alt="" number={index} key={index} onMouseEnter={this.hoverDo} onMouseLeave={this.leavelense} /></center>
                                                                     <br></br>
                                                                     <br></br>
-                                                                    <h2 className="course-one__title"><a href="/course-details"> {prod.name} </a></h2>
+                                                                    <h2 className="course-one__title"> {prod.name}</h2>
                                                                     <div className="course-one__stars">
                                                                 <span className="course-one__stars-wrap">
                                                                 {
@@ -324,7 +324,7 @@ constructor() {
                                 </button></center>
                                     <br></br>
                                     <br></br>
-                                    <h2 className="course-one__title"><a href="/course-details"> {prod.name} </a></h2>
+                                    <h2 className="course-one__title"> {prod.name} </h2>
                                     <div className="course-one__stars">
                                 <span className="course-one__stars-wrap">
                                 {

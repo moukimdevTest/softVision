@@ -7010,3 +7010,8 @@ padding: 0 15% 10%  ;
     margin:auto;
   }
 }
+@media(max-width:1200px){
+  .img2,.img3{
+    display:none;
+  }
+}

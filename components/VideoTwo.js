@@ -28,8 +28,8 @@ export default class VideoTwo extends Component {
                             </div>
                             <div className="col-lg-5 d-flex justify-content-lg-end justify-content-sm-start videoZZ">
                                 
-                                    <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='rKnHWfw4Azo' onClose={() => this.setState({isOpen: false})} />
-                                    <div onClick={this.openModal} className="video-two__popup" style={{opacity:"0.7",marginLeft:"35%"}}><i className="fa fa-play"></i>
+                                    <ModalVideo channel='custom'url="/assets/video/softvision_ioX8M3eK_sENE.mp4" isOpen={this.state.isOpen}  onClose={() => this.setState({isOpen: false})} />
+                                    <div onClick={this.openModal} className="video-three__popup" style={{opacity:"0.7",marginLeft:"35%",}}><i className="fa fa-play"></i>
                                     </div>
                                
                             </div>

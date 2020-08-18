@@ -86,7 +86,7 @@ const CourseCatOne = () => {
                                               </div>
                          <div className="course-one__content">
 
-                                <h2 className="course-one__title"><a href="/course-details"> Lentilles de contact<br></br> correctrices </a></h2>
+                                <h2 className="course-one__title"><Link href="/lentille-contact-correctrice" ><a href="/lentille-contact-correctrice"> Lentilles de contact<br></br> correctrices </a></Link></h2>
                                
                             
                             </div>
@@ -103,7 +103,7 @@ const CourseCatOne = () => {
                                               </div>
                          <div className="course-one__content">
 
-                                <h2 className="course-one__title"><a href="/course-details"> Lentilles de contact de couleur  correctrices </a></h2>
+                                <h2 className="course-one__title"><Link href="/lentille-contact-correctrice" ><a href="/lentille-contact-correctrice"> Lentilles de contact de couleur  correctrices </a></Link></h2>
                                
                             
                             </div>
@@ -119,7 +119,7 @@ const CourseCatOne = () => {
                                               </div>
                          <div className="course-one__content">
 
-                                <h2 className="course-one__title"><a href="/course-details"> Lentilles de contact cosmétiques </a></h2>
+                                <h2 className="course-one__title"><a href="#"> Lentilles de contact cosmétiques </a></h2>
                                
                             
                             </div>
