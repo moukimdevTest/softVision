@@ -9,69 +9,92 @@ constructor() {
     this.state={
         products :[
             {
-            name :"lentille bleu",
+            name :"Divine Crystal",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
-            lenseImageUrl:"/assets/images/True-dimensions/blue.jpg",
-            imageTochange:"/assets/images/gallery/img11.jpg",
+                firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+                lenseImageUrl:"/assets/images/mannequin_design/Divine_Crystal.png",
+                imageTochange:"/assets/images/mannequin_design/EYE-DivineCrystal.jpg",
             nbrOfReviews:250,
             isPreview : false
 
         },
        
         {
-            name :"lentille maron",
+            name :"Lordly Grey",
             rate:"4.8",
             nbrStars:2,
-            firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
-            lenseImageUrl:"/assets/images/True-dimensions/iimg11.jpg",
-            imageTochange:"/assets/images/gallery/img11.jpg",
+            firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+            lenseImageUrl:"/assets/images/mannequin_design/LordlyGrey.png",
+            imageTochange:"/assets/images/mannequin_design/EYE-LordlyGrey.jpg",
             nbrOfReviews:250,
             isPreview : false
 
         },
         {
-            name :"lentille Vert",
+            name :"Majestic Grey",
             rate:"3.5",
             nbrStars:4,
-            firstImageUrl:"/assets/images/soft/imageToChange7.png",
-            lenseImageUrl:"/assets/images/True-dimensions/iimg13.jpg",
-            imageTochange:"/assets/images/gallery/img13.jpg",
+            firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+            lenseImageUrl:"/assets/images/mannequin_design/MajesticGrey.png",
+            imageTochange:"/assets/images/mannequin_design/EYE-MajesticGrey.jpg",
             nbrOfReviews:250,
             isPreview : false
 
         },  {
-            name :"lentille bleu",
+            name :"Romantic Grey",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
-            lenseImageUrl:"/assets/images/True-dimensions/iimg9.jpg",
-            imageTochange:"/assets/images/gallery/img9.jpg",
+            firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+            lenseImageUrl:"/assets/images/mannequin_design/RomanticGrey.png",
+            imageTochange:"/assets/images/mannequin_design/EYE-RomanticGrey.jpg",
             nbrOfReviews:250,
             isPreview : false
 
         },  {
-            name :"lentille bleu",
+            name :"Sahara Brown",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
-            lenseImageUrl:"/assets/images/True-dimensions/iimg9.jpg",
-            imageTochange:"/assets/images/gallery/img9.jpg",
+            firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+            lenseImageUrl:"/assets/images/mannequin_design/SaharaBrown.png",
+            imageTochange:"/assets/images/mannequin_design/EYE-SaharaBrown.jpg",
             nbrOfReviews:250,
             isPreview : false
 
         },  {
-            name :"lentille bleu",
+            name :"Seductive Grey",
             rate:"4.8",
             nbrStars:5,
-            firstImageUrl:"/assets/images/soft/imageToChange7.png" ,
-            lenseImageUrl:"/assets/images/lenses/blue.png",
-            imageTochange:"/assets/images/lenses/eye-blue.jpg",
+            firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+            lenseImageUrl:"/assets/images/mannequin_design/SeductiveGrey.png",
+            imageTochange:"/assets/images/mannequin_design/EYE-SeductiveGrey.jpg",
             nbrOfReviews:250,
             isPreview : false
 
         },
+         {
+            name :"Sweet Grey",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+            lenseImageUrl:"/assets/images/mannequin_design/SweetGrey.png",
+            imageTochange:"/assets/images/mannequin_design/EYE-SweetGrey.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        },
+         {
+            name :"Tender Hazel",
+            rate:"4.8",
+            nbrStars:5,
+            firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+            lenseImageUrl:"/assets/images/mannequin_design/TenderHazel.png",
+            imageTochange:"/assets/images/mannequin_design/EYE-TenderHazel.jpg",
+            nbrOfReviews:250,
+            isPreview : false
+
+        },
+
         ],
         manequinProducts :[
             {

@@ -20,7 +20,6 @@ console.log("*********************************************************")
 const HomePage = () => (
 
     <Layout pageTitle="SOFT VISION | LENTILLES DE CONTACT CORRECTRICES ET COLORÉES">
-      {/* <Topbar /> */}
       <NavOne isIndex="true"/>
       <SliderOne 
       classgradient="banner-one__slide banner-one__slide-one" 
