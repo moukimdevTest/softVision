@@ -1,6 +1,71 @@
 import React, { Component } from 'react'
 import 'swiper/css/swiper.css';
+import Swiper from 'react-id-swiper';
+  const params = {
+    slidesPerView : 6,
+    loop: true,
+    speed: 1000,
+    spaceBetween : 30,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+    },
 
+    // Responsive breakpoints
+    breakpoints: {
+        1024:{
+            slidesPerView : 4
+        },
+        768:{
+            slidesPerView : 3
+        },
+        640:{
+            slidesPerView : 3
+
+        },
+        320:{
+            slidesPerView : 2
+        }
+        ,
+        300:{
+            slidesPerView : 1
+        }
+    }
+}
+const ManequinImages = [
+  
+    {
+        url:"/assets/images/manequin/slider/1.jpeg",
+        name:"DIVINE CRYSTAL"
+    },
+    {
+        url:"/assets/images/manequin/slider/2.png",
+        name:"MAJESTIC GREY"
+    },
+    {
+        url:"/assets/images/manequin/slider/3.jpg",
+        name:"ROMANTIC GREY"
+    },
+    {
+        url:"/assets/images/manequin/slider/4.jpg",
+        name:"SEDUCTIVE GREY"
+    },
+    {
+        url: "/assets/images/manequin/slider/5.jpg",
+        name:"LORDLY GREY"
+    },
+    {
+        url:"/assets/images/manequin/slider/6.jpg",
+        name:"SAHARA BROWN"
+    },
+    { url:"/assets/images/manequin/slider/7.jpg",
+    name:"SWEET GERY"  
+     },
+     { url:"/assets/images/manequin/slider/8.jpg",
+     name:"TENDER HAZEL"  
+      },
+
+]
 export default class App extends Component {
 
 
@@ -9,186 +74,210 @@ constructor() {
     this.state={
         products :[
             {
-            name :"Divine Crystal",
+            id:1,
+            name :"EYE-BLGray",
             rate:"4.8",
             nbrStars:5,
                 firstImageUrl:"/assets/images/gallery/img11.jpg" ,
-                lenseImageUrl:"/assets/images/mannequin_design/Divine_Crystal.png",
-                imageTochange:"/assets/images/mannequin_design/EYE-DivineCrystal.jpg",
+                lenseImageUrl:"/assets/images/manequin/new/BLGray.png",
+                imageTochange:"/assets/images/manequin/new/EYE-BLGray.jpg",
             nbrOfReviews:250,
-            isPreview : false
 
         },
        
         {
-            name :"Lordly Grey",
+            id:2,
+            name :"EYE-F Green",
             rate:"4.8",
             nbrStars:2,
             firstImageUrl:"/assets/images/gallery/img11.jpg" ,
-            lenseImageUrl:"/assets/images/mannequin_design/LordlyGrey.png",
-            imageTochange:"/assets/images/mannequin_design/EYE-LordlyGrey.jpg",
+            lenseImageUrl:"/assets/images/manequin/new/FGreen.png",
+            imageTochange:"/assets/images/manequin/new/EYE-FGreen.jpg",
             nbrOfReviews:250,
-            isPreview : false
 
         },
         {
-            name :"Majestic Grey",
+            id:3,
+            name :"EYE-FGS Green",
             rate:"3.5",
             nbrStars:4,
             firstImageUrl:"/assets/images/gallery/img11.jpg" ,
-            lenseImageUrl:"/assets/images/mannequin_design/MajesticGrey.png",
-            imageTochange:"/assets/images/mannequin_design/EYE-MajesticGrey.jpg",
+            lenseImageUrl:"/assets/images/manequin/new/FGSGreen.png",
+            imageTochange:"/assets/images/manequin/new/EYE-FGSGreen.jpg",
             nbrOfReviews:250,
-            isPreview : false
 
         },  {
-            name :"Romantic Grey",
+            id:4,
+            name :"EYE-F Pure Hazel",
             rate:"4.8",
             nbrStars:5,
             firstImageUrl:"/assets/images/gallery/img11.jpg" ,
-            lenseImageUrl:"/assets/images/mannequin_design/RomanticGrey.png",
-            imageTochange:"/assets/images/mannequin_design/EYE-RomanticGrey.jpg",
+            lenseImageUrl:"/assets/images/manequin/new/FPureHazel.png",
+            imageTochange:"/assets/images/manequin/new/EYE-FPureHazel.jpg",
             nbrOfReviews:250,
-            isPreview : false
 
         },  {
-            name :"Sahara Brown",
+            id:5,
+            name :"EYE-F Turquoise",
             rate:"4.8",
             nbrStars:5,
             firstImageUrl:"/assets/images/gallery/img11.jpg" ,
-            lenseImageUrl:"/assets/images/mannequin_design/SaharaBrown.png",
-            imageTochange:"/assets/images/mannequin_design/EYE-SaharaBrown.jpg",
+            lenseImageUrl:"/assets/images/manequin/new/FTurquoise.png",
+            imageTochange:"/assets/images/manequin/new/EYE-FTurquoise.jpg",
             nbrOfReviews:250,
-            isPreview : false
 
         },  {
-            name :"Seductive Grey",
+            id:6,
+            name :"EYE-G Green",
             rate:"4.8",
             nbrStars:5,
             firstImageUrl:"/assets/images/gallery/img11.jpg" ,
-            lenseImageUrl:"/assets/images/mannequin_design/SeductiveGrey.png",
-            imageTochange:"/assets/images/mannequin_design/EYE-SeductiveGrey.jpg",
+            lenseImageUrl:"/assets/images/manequin/new/GGreen.png",
+            imageTochange:"/assets/images/manequin/new/EYE-GGreen.jpg",
             nbrOfReviews:250,
-            isPreview : false
 
         },
          {
-            name :"Sweet Grey",
+             id:7,
+            name :"EYE - PA Brown ",
             rate:"4.8",
             nbrStars:5,
             firstImageUrl:"/assets/images/gallery/img11.jpg" ,
-            lenseImageUrl:"/assets/images/mannequin_design/SweetGrey.png",
-            imageTochange:"/assets/images/mannequin_design/EYE-SweetGrey.jpg",
+            lenseImageUrl:"/assets/images/manequin/new/PABrown.png",
+            imageTochange:"/assets/images/manequin/new/EYE-PABrown.jpg",
             nbrOfReviews:250,
-            isPreview : false
 
         },
          {
-            name :"Tender Hazel",
+             id:8,
+            name :"EYE - PA Gray",
             rate:"4.8",
             nbrStars:5,
             firstImageUrl:"/assets/images/gallery/img11.jpg" ,
-            lenseImageUrl:"/assets/images/mannequin_design/TenderHazel.png",
-            imageTochange:"/assets/images/mannequin_design/EYE-TenderHazel.jpg",
+            lenseImageUrl:"/assets/images/manequin/new/PAGray.png",
+            imageTochange:"/assets/images/manequin/new/EYE-PAGray.jpg",
             nbrOfReviews:250,
-            isPreview : false
 
         },
+        {
+            id:9,
+           name :"EYE - PA Green ",
+           rate:"4.8",
+           nbrStars:5,
+           firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+           lenseImageUrl:"/assets/images/manequin/new/PAGreen.png",
+           imageTochange:"/assets/images/manequin/new/EYE-PAGreen.jpg",
+           nbrOfReviews:250,
 
+       },{
+        id:10,
+       name :"EYE - PB Gray ",
+       rate:"4.8",
+       nbrStars:5,
+       firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+       lenseImageUrl:"/assets/images/manequin/new/PBGray.png",
+       imageTochange:"/assets/images/manequin/new/EYE-PBGray.jpg",
+       nbrOfReviews:250,
+
+   },{
+    id:11,
+   name :"EYE - PB Sky ",
+   rate:"4.8",
+   nbrStars:5,
+   firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+   lenseImageUrl:"/assets/images/manequin/new/PBSky.png",
+   imageTochange:"/assets/images/manequin/new/EYE-PBSky.jpg",
+   nbrOfReviews:250,
+
+},
         ],
         manequinProducts :[
             {
-            name :"MAJESTIC GREY",
-            rate:"4.8",
-            nbrStars:5,
-            firstImageUrl:"/assets/images/manequin/EYE-Majestic-Grey-A-74-Green-Gray-III.jpg" ,
-            secondImageUrl:"/assets/images/manequin/majesticGrey.png",
-            nbrOfReviews:250,
-            isPreview : false
-
-        },
-       
-        {
-            name :"SEDUCTIVE GREY",
-            rate:"4.8",
-            nbrStars:5,
-            firstImageUrl:"/assets/images/manequin/EYE-Seductive-Grey-A-92-Gray-III.jpg" ,
-            secondImageUrl:"/assets/images/manequin/Mannequin-contact-lenses-copie.jpg",
-            nbrOfReviews:250,
-            isPreview : false
-
-        },
-        {
-            name :"LORDLY GREY",
-            rate:"4.8",
-            nbrStars:5,
-            firstImageUrl:"/assets/images/manequin/EYE-Lordly-Grey-A-74-Husky-Gray-III-copie.jpg" ,
-            secondImageUrl:"/assets/images/manequin/mannequin-lentille-de-contact-couleur--768x768.jpg",
-            nbrOfReviews:250,
-            isPreview : false
-
-        }
-        ,
-        {
-            name :"SAHARA BROWN",
-            rate:"4.8",
-            nbrStars:5,
-            firstImageUrl:"/assets/images/manequin/EYE-Sahara-Brown-A-73-Brown-II.jpg" ,
-            secondImageUrl:"/assets/images/manequin/sahara-brown-lentilles-de-couleur-mannequin-450x628.jpg",
-            nbrOfReviews:250,
-            isPreview : false
-
-        },
-        {
-            name :"SWEET GREY",
-            rate:"4.8",
-            nbrStars:5,
-            firstImageUrl:"/assets/images/manequin/EYE-Sweet-Grey-PNB-Gray-I.jpg" ,
-            secondImageUrl:"/assets/images/manequin/sweetGrey.jpg",
-            nbrOfReviews:250,
-                    isPreview : false
-
-        },
-        {
-            name :"DIVINE CRYSTAL",
-            rate:"4.8",
-            nbrStars:5,
-            firstImageUrl:"/assets/images/manequin/EYE-Divine-Crystal-A-89-Crystal-III.jpg" ,
-            secondImageUrl:"/assets/images/manequin/Divine-crystal-lentilles-de-couleur-mannequin.png-768x726.jpeg",
-            nbrOfReviews:250,
-                    isPreview : false
-
-        },
-        {
-            name :"TENDER HAZEL",
-            rate:"4.8",
-            nbrStars:5,
-            firstImageUrl:"/assets/images/manequin/EYE-Tender-Hazel-A-91-Hazel-II.jpg" ,
-            secondImageUrl:"/assets/images/manequin/tendelHazel.jpg",
-            nbrOfReviews:250,
-                    isPreview : false
-
-        },
-        {
-            name :"ROMANTIC GREY",
-            rate:"4.8",
-            nbrStars:5,
-            firstImageUrl:"/assets/images/manequin/EYE-Romantic-Grey-A-90-Gray-III.jpg" ,
-            secondImageUrl:"/assets/images/manequin/mannequin-contact-lenses-by-soft-vision.jpg",
-            nbrOfReviews:250,
-                    isPreview : false
-
-        },
-        {
-            name :"ROMANTIC GREY",
-            rate:"4.8",
-            nbrStars:5,
-            firstImageUrl:"/assets/images/manequin/EYE-Romantic-Grey-A-90-Gray-III.jpg" ,
-            secondImageUrl:"/assets/images/manequin/mannequin-contact-lenses-by-soft-vision.jpg",
-            nbrOfReviews:250,
-                    isPreview : false
-
-        }
+                id:1,
+                name :"Divine Crystal",
+                rate:"4.8",
+                nbrStars:5,
+                    firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+                    lenseImageUrl:"/assets/images/mannequin_design/Divine_Crystal.png",
+                    imageTochange:"/assets/images/mannequin_design/EYE-DivineCrystal.jpg",
+                nbrOfReviews:250,
+    
+            },
+           
+            {
+                id:2,
+                name :"Lordly Grey",
+                rate:"4.8",
+                nbrStars:2,
+                firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+                lenseImageUrl:"/assets/images/mannequin_design/LordlyGrey.png",
+                imageTochange:"/assets/images/mannequin_design/EYE-LordlyGrey.jpg",
+                nbrOfReviews:250,
+    
+            },
+            {
+                id:3,
+                name :"Majestic Grey",
+                rate:"3.5",
+                nbrStars:4,
+                firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+                lenseImageUrl:"/assets/images/mannequin_design/MajesticGrey.png",
+                imageTochange:"/assets/images/mannequin_design/EYE-MajesticGrey.jpg",
+                nbrOfReviews:250,
+    
+            },  {
+                id:4,
+                name :"Romantic Grey",
+                rate:"4.8",
+                nbrStars:5,
+                firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+                lenseImageUrl:"/assets/images/mannequin_design/RomanticGrey.png",
+                imageTochange:"/assets/images/mannequin_design/EYE-RomanticGrey.jpg",
+                nbrOfReviews:250,
+    
+            },  {
+                id:5,
+                name :"Sahara Brown",
+                rate:"4.8",
+                nbrStars:5,
+                firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+                lenseImageUrl:"/assets/images/mannequin_design/SaharaBrown.png",
+                imageTochange:"/assets/images/mannequin_design/EYE-SaharaBrown.jpg",
+                nbrOfReviews:250,
+    
+            },  {
+                id:6,
+                name :"Seductive Grey",
+                rate:"4.8",
+                nbrStars:5,
+                firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+                lenseImageUrl:"/assets/images/mannequin_design/SeductiveGrey.png",
+                imageTochange:"/assets/images/mannequin_design/EYE-SeductiveGrey.jpg",
+                nbrOfReviews:250,
+    
+            },
+             {
+                 id:7,
+                name :"Sweet Grey",
+                rate:"4.8",
+                nbrStars:5,
+                firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+                lenseImageUrl:"/assets/images/mannequin_design/SweetGrey.png",
+                imageTochange:"/assets/images/mannequin_design/EYE-SweetGrey.jpg",
+                nbrOfReviews:250,
+    
+            },
+             {
+                 id:8,
+                name :"Tender Hazel",
+                rate:"4.8",
+                nbrStars:5,
+                firstImageUrl:"/assets/images/gallery/img11.jpg" ,
+                lenseImageUrl:"/assets/images/mannequin_design/TenderHazel.png",
+                imageTochange:"/assets/images/mannequin_design/EYE-TenderHazel.jpg",
+                nbrOfReviews:250,
+    
+            }
         ],
     };
   } 
@@ -319,81 +408,107 @@ constructor() {
                 </section>
             ) : (
                 <div>
-                <section className="course-one course-one__teacher-details home-one" >
-                    <div className="container" >
+                
+
+                <section id="sansCorrection" className="course-one course-one__teacher-details home-one">
+                    <div className="container">
                         <div className="course-one__carousel">
-                        <div className="swiper-container swiper-container-initialized swiper-container-horizontal" >
 
-<div className="swiper-wrapper" >
-    <div className="swiper-slide item swiper-slide-duplicate swiper-slide-duplicate-active" >
-    <div className="row productsRow">
-     
+                            
+                            <div className="swiper-container swiper-container-initialized swiper-container-horizontal" >
 
-        {
-            this.state.manequinProducts.map((prod,index)=>{
-                return(
-        <div className="col-sm">
-                    <div className="itemproductionlist">
-                            <div className="course-one__single color-1">
-                                <div className="course-one__image">
-                                <img style={{maxWidth:"300px",maxHeight:"200px"}} className="eyeAfterLense" src={prod.firstImageUrl} alt="" />
-                                <i className="far fa-heart"></i>
-                                </div>
-                            <div className="course-one__content">
-                               <center> <button style={{backgroundColor:"dodgerBlue",color:"white"}} className="lensImage "alt="" number={index} key={index} onMouseEnter={this.hoverDoManequin} >
-                               
-                               {prod.isPreview ? "Back" : "Preview" } 
-                                
-                                </button></center>
-                                    <br></br>
-                                    <br></br>
-                                    <h2 className="course-one__title"> {prod.name} </h2>
-                                    <div className="course-one__stars">
-                                <span className="course-one__stars-wrap">
-                                {
-                                    [...Array(prod.nbrStars)].map((x, i) =>
-                                    <i key={i} className="fa fa-star"></i>)}
-                                    
-                                </span>
-                                        <span className="course-one__count">{prod.rate}</span>
-                                        <span className="course-one__stars-count">{prod.nbrOfReviews}</span>
+                                <div className="swiper-wrapper" >
+                                    <div className="swiper-slide item swiper-slide-duplicate swiper-slide-duplicate-active" >
+                                    <div className="row productsRow">
+                                     
+
+                                        {
+                                            this.state.manequinProducts.map((prod,index)=>{
+                                                return(
+                                        <div key={index} className="col-sm">
+                                                    <div className="itemproductionlist">
+                                                            <div className="course-one__single color-1">
+                                                                <div className="course-one__image">
+                                                                <img className="eyeAfterLense" src={prod.firstImageUrl} alt="" />
+                                                                <i className="far fa-heart"></i>
+                                                                </div>
+                                                            <div className="course-one__content">
+                                                                <center><img className="lensImage " src={prod.lenseImageUrl} alt="" number={index} key={index} onMouseEnter={this.hoverDo} onMouseLeave={this.leavelense} /></center>
+                                                                    <br></br>
+                                                                    <br></br>
+                                                                    <h2 className="course-one__title"> {prod.name}</h2>
+                                                                    <div className="course-one__stars">
+                                                                <span className="course-one__stars-wrap">
+                                                                {
+                                                                    [...Array(prod.nbrStars)].map((x, i) =>
+                                                                    <i key={i} className="fa fa-star"></i>)}
+                                                                    
+                                                                </span>
+                                                                        <span className="course-one__count">{prod.rate}</span>
+                                                                        <span className="course-one__stars-count">{prod.nbrOfReviews}</span>
+                                                                    </div>
+                                                                
+                                                                </div>
+                                                            </div>
+                                                    </div> 
+                                        </div>
+
+                                                )
+                                            })
+                                        }
+                                      
                                     </div>
-                                
+                                   
+
+                                    </div>
+                                    
                                 </div>
                             </div>
-                    </div> 
-        </div>
-
-                )
-            })
-        }
-        
-    </div>
-   
-
-    </div>
-    
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
+                             
+                        
+                            
                         </div>
                     </div>
-              
-               
-  </section>
+                    
+                </section>
+
+                <section className="course-one course-one__teacher-details home-one">
+            <div className="containerr">
+                <div className="course-one__carousel">
+                <Swiper {...params} >
+  
+  
+    {/* ************************************************************************ */}
+
+                {
+                    ManequinImages.map((manqImage,index)=>{
+                        return(
+                            <div key={index} className="itemProdMM">
+                                     <div className="course-one__single color-1">
+                                       <div className="course-one__image">
+                                          <img src={manqImage.url} alt={"manequin image"+index} />
+                                        </div>
+                                            <div className="course-one__content">
+
+                                <h2 className="course-one__title"> {manqImage.name}</h2>
+    </div>
+                      
+                        </div>
+    
+
+                    </div>
+                        )
+                    })
+                }
+    
+
+</Swiper>
+                    </div>
+                </div>
+            </section>
   <div style={{backgroundColor:"#def6fe",color:"black"}}>
   <hr></hr>
+
      <div style={{margin:"0 27%",paddingBottom:"25px"}}>
     <center><h1 style={{fontFamily:"Cinzel",fontSize:"30px",fontWeight:"600",letterSpacing:"1px"}} >THE TIMELESS BEAUTY TOUCH</h1></center>
     <p className="manequinP">Porter des lentilles colorées n’a jamais été aussi à la mode. Mannequin propose une palette de couleur au design naturel qui vous permettent un changement radical ou subtil de la couleur de vos yeux selon l’effet recherché.</p>

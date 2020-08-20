@@ -37,7 +37,6 @@ const Layout = (props) => {
 
             <script src="/assets/plugins/bootstrap/jquery.min.js"></script>
             <script src="/assets/plugins/bootstrap/bootstrap.min.js"></script>
-            <script src="/assets/moukimjs/script.js"></script>
 
         </div>
     );

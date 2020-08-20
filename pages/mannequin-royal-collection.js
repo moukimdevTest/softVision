@@ -13,7 +13,7 @@ const royalCollectionPage = () => {
         <NavOne />
         <SliderOne
          classgradient="banner-one__slide-manequin banner-one__slide-one" 
-         image1="/assets/images/manequin/mannequin-contact-lenses-by-soft-vision.jpg" image2="/assets/images/manequin/Mannequin-contact-lenses-copie.jpg"  size="800"
+         image1="/assets/images/manequin/3.jpg" image2="/assets/images/manequin/4.jpg"  size="800"
          text1 ="Royal collection" desc1="MANNEQUIN LENTILLES DE CONTACT DE COULEUR "
          text2="Soft Vision" desc2="The touch of timeless beauty"
           />
